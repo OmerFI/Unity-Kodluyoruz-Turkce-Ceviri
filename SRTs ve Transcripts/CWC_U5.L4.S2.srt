@@ -1,0 +1,357 @@
+﻿1
+00:00:00,691 --> 00:00:04,959
+(futuristic instrumental music)
+
+2
+00:00:04,959 --> 00:00:05,792
+(electrical zapping)
+
+3
+00:00:05,792 --> 00:00:08,230
+- [Instrumental] Now we've
+added all of our buttons
+
+4
+00:00:08,230 --> 00:00:11,660
+and our title text to our game.
+
+5
+00:00:11,660 --> 00:00:13,550
+But these buttons don't
+actually do anything,
+
+6
+00:00:13,550 --> 00:00:16,660
+so we'll need to create a script to do so.
+
+7
+00:00:16,660 --> 00:00:18,720
+One thing that we're gonna
+do is just some clean up,
+
+8
+00:00:18,720 --> 00:00:21,490
+so, in fact, because we
+copied that restart button
+
+9
+00:00:21,490 --> 00:00:24,640
+and duplicated it, if
+you go to the on click,
+
+10
+00:00:24,640 --> 00:00:26,760
+if you select one of the
+buttons in the Inspector
+
+11
+00:00:26,760 --> 00:00:28,620
+and scroll down, you can actually see
+
+12
+00:00:28,620 --> 00:00:31,140
+that it's still tied to the restart game
+
+13
+00:00:31,140 --> 00:00:33,270
+and we don't want these buttons to just
+
+14
+00:00:33,270 --> 00:00:34,930
+be restarting the game all the time.
+
+15
+00:00:34,930 --> 00:00:37,320
+So actually, in on click,
+
+16
+00:00:37,320 --> 00:00:38,720
+you can see the little minus button,
+
+17
+00:00:38,720 --> 00:00:42,210
+and if you just click that,
+it'll remove that game manager.
+
+18
+00:00:42,210 --> 00:00:45,100
+So, go through each of
+the different buttons,
+
+19
+00:00:45,100 --> 00:00:48,190
+remove those, so now,
+we can't just magically
+
+20
+00:00:48,190 --> 00:00:49,460
+restart our game.
+
+21
+00:00:49,460 --> 00:00:51,150
+Definitely don't want that to happen.
+
+22
+00:00:51,150 --> 00:00:52,870
+Now what we're gonna do
+is we're actually going
+
+23
+00:00:52,870 --> 00:00:54,400
+to make a new script now.
+
+24
+00:00:54,400 --> 00:00:58,130
+So in our Scripts folder,
+we right-click, Create,
+
+25
+00:00:58,130 --> 00:00:59,570
+a C# Script.
+
+26
+00:00:59,570 --> 00:01:03,520
+And this script will be
+called difficulty button,
+
+27
+00:01:03,520 --> 00:01:07,490
+to control the difficulty
+when we use our buttons.
+
+28
+00:01:07,490 --> 00:01:08,653
+So we have that.
+
+29
+00:01:09,890 --> 00:01:12,400
+Now what we're gonna do is
+
+30
+00:01:12,400 --> 00:01:15,630
+we're going to actually select
+all of our different buttons,
+
+31
+00:01:15,630 --> 00:01:18,380
+our easy, our medium, and our hard button,
+
+32
+00:01:18,380 --> 00:01:21,630
+and we're going to
+scroll all the way down.
+
+33
+00:01:21,630 --> 00:01:23,943
+Now I'm going to add a component,
+
+34
+00:01:25,250 --> 00:01:26,450
+and we're going to actually search
+
+35
+00:01:26,450 --> 00:01:29,120
+for that difficulty button script.
+
+36
+00:01:29,120 --> 00:01:30,270
+There you go.
+
+37
+00:01:30,270 --> 00:01:32,040
+Now the difficulty button has been added,
+
+38
+00:01:32,040 --> 00:01:34,380
+and we can actually check each one.
+
+39
+00:01:34,380 --> 00:01:37,730
+One, two, three scripts.
+
+40
+00:01:37,730 --> 00:01:38,563
+Perfect.
+
+41
+00:01:39,710 --> 00:01:42,420
+Now, in our difficulty button script,
+
+42
+00:01:42,420 --> 00:01:44,260
+in order to interact
+with those buttons again,
+
+43
+00:01:44,260 --> 00:01:47,080
+we need to make sure
+that we use that library
+
+44
+00:01:47,080 --> 00:01:49,640
+that we had before, very handy.
+
+45
+00:01:49,640 --> 00:01:54,640
+So, UnityEngine.UI,
+
+46
+00:01:54,710 --> 00:01:57,500
+because the UI library helps
+us interact with buttons.
+
+47
+00:01:57,500 --> 00:02:01,550
+So now, we need to get
+references to our buttons,
+
+48
+00:02:01,550 --> 00:02:03,460
+so we'll make it private,
+
+49
+00:02:03,460 --> 00:02:05,440
+and we'll just call it button,
+
+50
+00:02:05,440 --> 00:02:07,960
+and we'll name it button,
+
+51
+00:02:07,960 --> 00:02:09,280
+cause we're getting this button,
+
+52
+00:02:09,280 --> 00:02:13,500
+so, in our start method,
+we're just going to make sure
+
+53
+00:02:13,500 --> 00:02:16,550
+that we get the actual button component
+
+54
+00:02:16,550 --> 00:02:20,030
+on our button, so we
+use our button variable,
+
+55
+00:02:20,030 --> 00:02:22,940
+and we get the component.
+
+56
+00:02:22,940 --> 00:02:25,683
+And we're looking for the
+component called a button.
+
+57
+00:02:26,890 --> 00:02:29,130
+And then, make sure you add parentheses.
+
+58
+00:02:29,130 --> 00:02:31,660
+So now, we've attached
+the scripts on to each
+
+59
+00:02:31,660 --> 00:02:32,740
+of our different buttons,
+
+60
+00:02:32,740 --> 00:02:35,360
+and we're making sure that
+we get that button component
+
+61
+00:02:35,360 --> 00:02:39,320
+from our button, so we
+can get a reference to it
+
+62
+00:02:39,320 --> 00:02:41,790
+in our difficulty script.
+
+63
+00:02:41,790 --> 00:02:44,870
+So, what you're gonna do
+is, in each of your buttons,
+
+64
+00:02:44,870 --> 00:02:48,270
+make sure that you go
+to the on click section
+
+65
+00:02:48,270 --> 00:02:51,020
+underneath the button components,
+
+66
+00:02:51,020 --> 00:02:53,160
+remove the reference to the game manager
+
+67
+00:02:53,160 --> 00:02:55,680
+on each of your different buttons.
+
+68
+00:02:55,680 --> 00:02:59,140
+You're then going to create
+a difficulty button script,
+
+69
+00:02:59,140 --> 00:03:00,600
+and then make sure that you attach it
+
+70
+00:03:00,600 --> 00:03:04,570
+to each of your easy,
+medium, and hard buttons.
+
+71
+00:03:04,570 --> 00:03:07,470
+And then, in your
+difficulty button script,
+
+72
+00:03:07,470 --> 00:03:10,970
+you're going to make sure that
+you use the UnityEngine.UI
+
+73
+00:03:10,970 --> 00:03:12,530
+so we can use buttons.
+
+74
+00:03:12,530 --> 00:03:14,250
+We're going to make a private variable
+
+75
+00:03:14,250 --> 00:03:17,780
+for our button component on our button,
+
+76
+00:03:17,780 --> 00:03:18,950
+and then in our start method,
+
+77
+00:03:18,950 --> 00:03:21,720
+we're going to make sure
+that we get the variable
+
+78
+00:03:21,720 --> 00:03:25,060
+of our button and set it
+to the button component
+
+79
+00:03:25,060 --> 00:03:26,960
+currently on our button.
+
+80
+00:03:26,960 --> 00:03:27,910
+Now it's your turn.
+
+81
+00:03:28,922 --> 00:03:32,922
+(futuristic instrumental music)
+

@@ -1,0 +1,358 @@
+﻿1
+00:00:05,840 --> 00:00:09,770
+- [Instructor] Our title
+screen is now looking amazing,
+
+2
+00:00:09,770 --> 00:00:11,430
+but we do have this problem
+
+3
+00:00:11,430 --> 00:00:13,230
+where we're not actually
+starting the game.
+
+4
+00:00:13,230 --> 00:00:15,490
+The game has already started.
+
+5
+00:00:15,490 --> 00:00:17,360
+And we can actually
+click all of these boxes,
+
+6
+00:00:17,360 --> 00:00:19,960
+but, in fact, we can
+also click these buttons,
+
+7
+00:00:19,960 --> 00:00:21,520
+which is helpful.
+
+8
+00:00:21,520 --> 00:00:23,130
+And down in the bottom you can see
+
+9
+00:00:23,130 --> 00:00:25,060
+we know which button was clicked.
+
+10
+00:00:25,060 --> 00:00:26,860
+In fact, if I squeeze between this button
+
+11
+00:00:26,860 --> 00:00:28,750
+I can restart the game, so that's fun.
+
+12
+00:00:28,750 --> 00:00:32,683
+So I actually need to fix that
+and actually start our game.
+
+13
+00:00:34,330 --> 00:00:36,350
+Now, in our game manager's script,
+
+14
+00:00:36,350 --> 00:00:37,600
+since this is the script
+
+15
+00:00:37,600 --> 00:00:39,460
+that's managing all the different states
+
+16
+00:00:39,460 --> 00:00:41,070
+that our game is going through.
+
+17
+00:00:41,070 --> 00:00:43,760
+Like restarting and game over,
+
+18
+00:00:43,760 --> 00:00:47,590
+we'll add a start game method into this,
+
+19
+00:00:47,590 --> 00:00:49,720
+so we don't have to keep immediately
+
+20
+00:00:49,720 --> 00:00:51,113
+starting the game on start.
+
+21
+00:00:53,670 --> 00:00:55,320
+So, we'll add a new method,
+
+22
+00:00:55,320 --> 00:00:56,153
+we'll make it public,
+
+23
+00:00:56,153 --> 00:00:58,750
+so we can use it outside of this class.
+
+24
+00:00:58,750 --> 00:01:01,253
+It'll be void, and it'll
+be called start game.
+
+25
+00:01:02,670 --> 00:01:05,220
+Luckily, we've already written
+code to start our game.
+
+26
+00:01:05,220 --> 00:01:07,313
+So, we're just gonna use that.
+
+27
+00:01:08,300 --> 00:01:10,110
+In our start method here,
+
+28
+00:01:10,110 --> 00:01:13,440
+you can see that we have
+our different settings.
+
+29
+00:01:13,440 --> 00:01:15,890
+So we'll take all of these
+
+30
+00:01:15,890 --> 00:01:19,333
+and we'll cut them out
+of our start method,
+
+31
+00:01:20,250 --> 00:01:23,980
+and we'll paste all of that
+code into our start game.
+
+32
+00:01:23,980 --> 00:01:26,330
+So now when the game is started,
+
+33
+00:01:26,330 --> 00:01:28,440
+we know that the game is set to active.
+
+34
+00:01:28,440 --> 00:01:29,450
+Our score is reset,
+
+35
+00:01:29,450 --> 00:01:31,690
+and then we can start
+spawning all of our enemies.
+
+36
+00:01:31,690 --> 00:01:33,430
+Make sure we save,
+
+37
+00:01:33,430 --> 00:01:36,270
+and then, in our difficulty button script,
+
+38
+00:01:36,270 --> 00:01:38,000
+we're actually going to need a reference
+
+39
+00:01:38,000 --> 00:01:39,090
+to the game manager,
+
+40
+00:01:39,090 --> 00:01:41,130
+just like we did in our target script.
+
+41
+00:01:41,130 --> 00:01:42,960
+So this will be private,
+
+42
+00:01:42,960 --> 00:01:45,440
+and we just need to get our game manager,
+
+43
+00:01:45,440 --> 00:01:46,590
+and we'll call it the game manager,
+
+44
+00:01:46,590 --> 00:01:49,270
+because that's what it is.
+
+45
+00:01:49,270 --> 00:01:50,420
+Now, in our start method,
+
+46
+00:01:50,420 --> 00:01:54,450
+we also need to get a
+reference to that game manager.
+
+47
+00:01:54,450 --> 00:01:57,360
+So we'll get our game manager variable,
+
+48
+00:01:57,360 --> 00:01:59,740
+and we'll set it or assign it
+
+49
+00:01:59,740 --> 00:02:03,220
+to the game manager game object.
+
+50
+00:02:03,220 --> 00:02:08,220
+So, if we use game
+object in our hierarchy,
+
+51
+00:02:08,500 --> 00:02:13,500
+we will find the object
+that's called game manager.
+
+52
+00:02:15,520 --> 00:02:18,180
+And then once we've found that object,
+
+53
+00:02:18,180 --> 00:02:19,923
+we'll need to get its component,
+
+54
+00:02:21,020 --> 00:02:23,853
+which is handily also
+called the game manager.
+
+55
+00:02:27,090 --> 00:02:29,220
+And then in our set difficulty method,
+
+56
+00:02:29,220 --> 00:02:31,173
+we can now use our game manager.
+
+57
+00:02:32,900 --> 00:02:37,163
+And we can use the start game
+method, that we wrote before.
+
+58
+00:02:38,090 --> 00:02:40,770
+So, if we test our game now,
+
+59
+00:02:40,770 --> 00:02:43,223
+nothing should happen when we press play.
+
+60
+00:02:44,700 --> 00:02:47,210
+None of those crates are spawning,
+
+61
+00:02:47,210 --> 00:02:49,510
+but then, if we press one of our buttons,
+
+62
+00:02:49,510 --> 00:02:50,833
+let's go for easy mode,
+
+63
+00:02:52,400 --> 00:02:54,530
+there you go you've got
+some crate spawning.
+
+64
+00:02:54,530 --> 00:02:56,800
+And then our game should go over,
+
+65
+00:02:56,800 --> 00:02:58,563
+get the game over, cool.
+
+66
+00:03:00,720 --> 00:03:02,550
+So we're almost there,
+
+67
+00:03:02,550 --> 00:03:04,110
+but at least now we can start the game
+
+68
+00:03:04,110 --> 00:03:06,070
+when we press one of the buttons.
+
+69
+00:03:06,070 --> 00:03:07,930
+So, what you're gonna do
+
+70
+00:03:07,930 --> 00:03:10,500
+in your game manager script,
+
+71
+00:03:10,500 --> 00:03:13,200
+you're going to create a new
+method called start game.
+
+72
+00:03:14,070 --> 00:03:17,230
+And then we can just grab all of the code
+
+73
+00:03:17,230 --> 00:03:19,193
+from our start method at the top,
+
+74
+00:03:20,043 --> 00:03:23,740
+and paste it down into start game.
+
+75
+00:03:23,740 --> 00:03:26,023
+In our difficulty button script,
+
+76
+00:03:26,890 --> 00:03:29,580
+create a variable for the game manager.
+
+77
+00:03:29,580 --> 00:03:33,090
+Make sure to find that
+game manager in the scene,
+
+78
+00:03:33,090 --> 00:03:36,130
+and then get the component
+of its game manager script,
+
+79
+00:03:36,130 --> 00:03:37,533
+so we can get the variables.
+
+80
+00:03:38,430 --> 00:03:41,050
+And then, in set difficulty,
+
+81
+00:03:41,050 --> 00:03:44,000
+you can then call game
+manager, dot start game,
+
+82
+00:03:44,000 --> 00:03:46,370
+so, when we click one of the buttons,
+
+83
+00:03:46,370 --> 00:03:49,910
+it'll then run this line
+of code and start our game.
+
+84
+00:03:49,910 --> 00:03:50,860
+Now it's your turn.
+

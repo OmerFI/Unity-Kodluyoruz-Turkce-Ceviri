@@ -1,0 +1,174 @@
+﻿1
+00:00:00,441 --> 00:00:03,358
+(electronic music)
+
+2
+00:00:05,900 --> 00:00:07,560
+- [Tutor] We've come a long way
+
+3
+00:00:07,560 --> 00:00:09,730
+in our prototype adventure here.
+
+4
+00:00:09,730 --> 00:00:12,620
+So, we've learned a whole lot
+
+5
+00:00:12,620 --> 00:00:15,250
+and added even more to this game.
+
+6
+00:00:15,250 --> 00:00:19,470
+We have this title screen
+that has text on it.
+
+7
+00:00:19,470 --> 00:00:22,440
+We have a score that keeps
+track, we have these buttons
+
+8
+00:00:22,440 --> 00:00:25,193
+that can actually tell
+how difficult the game is.
+
+9
+00:00:26,690 --> 00:00:29,050
+With each of these buttons
+
+10
+00:00:29,050 --> 00:00:31,850
+we can make all of these different objects
+
+11
+00:00:31,850 --> 00:00:34,741
+spawn faster or slower.
+
+12
+00:00:34,741 --> 00:00:38,480
+And if we miss one of these
+boxes, our game is over.
+
+13
+00:00:38,480 --> 00:00:40,263
+We can't click the boxes.
+
+14
+00:00:41,170 --> 00:00:44,510
+If we restart our game,
+it reloads the scene.
+
+15
+00:00:44,510 --> 00:00:49,510
+So now we have a really full
+functioning game on our hands.
+
+16
+00:00:50,440 --> 00:00:53,600
+We learned a whole lot of
+programming along the way,
+
+17
+00:00:53,600 --> 00:00:56,380
+like learning how to
+use listeners on buttons
+
+18
+00:00:56,380 --> 00:00:58,550
+to be able to use different methods.
+
+19
+00:00:58,550 --> 00:01:02,570
+We even used methods from
+other scripts that we wrote
+
+20
+00:01:02,570 --> 00:01:05,610
+with parameters that
+we can pass into them.
+
+21
+00:01:05,610 --> 00:01:08,540
+We learned how to use
+this division operator,
+
+22
+00:01:08,540 --> 00:01:10,730
+similar to how we had multiplication
+
+23
+00:01:10,730 --> 00:01:12,730
+and addition and subtraction,
+
+24
+00:01:12,730 --> 00:01:15,830
+and we figured out this handy little trick
+
+25
+00:01:15,830 --> 00:01:19,460
+to be able to disable all
+of our title screen elements
+
+26
+00:01:19,460 --> 00:01:23,330
+by nesting them underneath
+our title screen game object,
+
+27
+00:01:23,330 --> 00:01:25,580
+and turning it on and off.
+
+28
+00:01:25,580 --> 00:01:29,830
+With the end of the prototype
+we've come such a long way,
+
+29
+00:01:29,830 --> 00:01:34,270
+we've added all of this
+amazing UI to our game,
+
+30
+00:01:34,270 --> 00:01:36,220
+like buttons and text.
+
+31
+00:01:36,220 --> 00:01:38,760
+We learned about mouse and click events,
+
+32
+00:01:38,760 --> 00:01:40,423
+like clicking on this button.
+
+33
+00:01:42,340 --> 00:01:46,830
+We learned about game states,
+like restarting our game,
+
+34
+00:01:46,830 --> 00:01:49,153
+setting the difficulty for our players,
+
+35
+00:01:50,710 --> 00:01:53,170
+enabling them to actually
+play and experience
+
+36
+00:01:53,170 --> 00:01:54,723
+the thing that we've created.
+
+37
+00:01:57,170 --> 00:02:02,160
+And with that, our game is
+over and our prototype is over.
+
+38
+00:02:02,160 --> 00:02:03,110
+We'll see you soon.
+
+39
+00:02:04,576 --> 00:02:07,493
+(electronic music)
+
