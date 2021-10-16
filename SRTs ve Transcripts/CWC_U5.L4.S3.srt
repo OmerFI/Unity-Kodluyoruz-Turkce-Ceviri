@@ -1,267 +1,355 @@
-ï»¿1
+1
 00:00:00,973 --> 00:00:03,390
 (soft music)
+(hafif müzik)
 
 2
 00:00:05,870 --> 00:00:07,100
 - [Male Instructor] On
 each of our buttons,
+- [Erkek Eðitmen] Herbir
+düðmemiz için
 
 3
 00:00:07,100 --> 00:00:09,800
 we've now applied scripts to them,
+script uyguladýk,
 
 4
 00:00:09,800 --> 00:00:12,570
 and now we actually want to use a method,
+ve þimdi yapmak istediðimiz þey düðmelerimizin
 
 5
 00:00:12,570 --> 00:00:15,790
 so that way, our buttons know, what to do.
+ne yapmasýný bilmesi için bir metod kullanmak.
 
 6
 00:00:15,790 --> 00:00:18,010
 Now, in our difficulty buttons script,
+Þimdi, DifficultyButton.cs script'imiz içerisinde
 
 7
 00:00:18,010 --> 00:00:20,340
 we're going to create a new method,
+private olacak þekilde yeni bir
 
 8
 00:00:20,340 --> 00:00:21,890
 this one will just make private,
+metod oluþturacaðýz,
 
 9
 00:00:21,890 --> 00:00:24,363
 so we'll just say void set difficulty.
+bunun için þöyle diyelim: void SetDifficulty()
 
 10
 00:00:26,070 --> 00:00:27,980
 'Cause I don't believe
 we'll need this later,
+Buna daha sonra ihtiyacýmýz
+olacaðýný sanmýyorum,
 
 11
 00:00:27,980 --> 00:00:30,450
 we'll just need it inside of this class.
+sadece bu sýnýf içinde olmasýna ihtiyacýmýz var (bu yüzden private yapýyoruz).
 
 12
 00:00:30,450 --> 00:00:34,930
 And then, for set difficulty,
 we're just going to test
+Zorluk derecesini 
+ayarlamak için,
 
 13
 00:00:34,930 --> 00:00:39,150
 and see if it works for now
 using a debug.log method,
+çalýþýp çalýþmadýðýný Debug.Log
+metodunu kullanarak test edeceðiz
 
 14
 00:00:39,150 --> 00:00:42,670
 so that way we can print
 out to our console in Unity,
+bunun sayesinde Unity içindeki
+konsola yazdýrabiliriz
 
 15
 00:00:42,670 --> 00:00:46,500
 and we're actually going to
 get the button.gameObject.name,
+button.gameObject.name deðerini
+alacaðýz,
 
 16
 00:00:49,270 --> 00:00:52,150
 so this will give us
 the name of our button.
+bu bize düðmemizin
+adýný verecek
 
 17
 00:00:52,150 --> 00:00:57,150
 Then, we'll use a literal
 string, to say, was clicked,
+Ardýndan týklandýðýný belirtmek için
+sabit bir string kullanýyoruz
 
 18
 00:00:57,370 --> 00:00:59,880
 so then when we press one
 of the buttons, for example,
+böylece düðmelerimizden birine
+týkladýðýmýzda, örneðin þunu demeli
 
 19
 00:00:59,880 --> 00:01:03,070
 it should say easy button was clicked.
+"Easy Button was clicked" (Kolay düðmesi týklandý).
 
 20
 00:01:03,070 --> 00:01:05,570
 And then, one thing we do
 need to do, is we actually
+Þuan yapmamýz gereken
+þey bir düðmenin
 
 21
 00:01:05,570 --> 00:01:09,200
 need to use this method to
 see when a button was clicked.
+týklandýðýný görmemiz için
+bu metodu kullanmak.
 
 22
 00:01:09,200 --> 00:01:11,793
 So, we can actually say button.
+Bunun için þöyle yazabiliriz: button
 
 23
 00:01:12,730 --> 00:01:15,470
 Now, similar to what we had
 with the restart button,
+Daha önceden,
+düðmenin fare tarafýndan
 
 24
 00:01:15,470 --> 00:01:19,450
 where it had an onclick
 method, to listen for when
+týklanýp týklanmadýðýný
+dinleyen
 
 25
 00:01:19,450 --> 00:01:21,890
 the button was clicked by the mouse,
+OnClick metoduna sahip olan
 
 26
 00:01:21,890 --> 00:01:25,270
 we can actually use that
 in code, so we can actually
+Restart Button (yeniden baþlatma)
+düðmesi gibi
 
 27
 00:01:25,270 --> 00:01:28,220
 use onclick, so when
 the button is clicked,
+bizim oyunumuzun da
+ayný þekilde
 
 28
 00:01:28,220 --> 00:01:31,920
 we need our game to
 listen, to pay attention,
+týklandýðýnda
+dinlemesine ve
 
 29
 00:01:31,920 --> 00:01:35,080
 to when it's actually been
 clicked, so in this case,
+kulak vermesine/önem göstermesine
+ihtiyacýmýz var. Bu yüzden 
 
 30
 00:01:35,080 --> 00:01:37,760
 in programming we call
 this adding a listener,
+bu gibi durumlarda, programlamada
+biz buna "adding a listener" (dinleyici ekleme)
 
 31
 00:01:37,760 --> 00:01:39,120
 so that way it pays attention
+ismi veriyoruz, böylece belirli bir yapýlan iþe
 
 32
 00:01:39,120 --> 00:01:41,220
 for when a certain event has happened.
+karþýlýk verebiliyor hale geliyorlar.
 
 33
 00:01:41,220 --> 00:01:43,130
 In this case, a click event.
+Þuanki durumda, ihtiyacýmýz olan bir click event (týklama olayý).
 
 34
 00:01:43,130 --> 00:01:47,440
 And then, we can just use a
 method to pass into our listener
+Bunun için listenerýmýza (dinleyicimize)
+vermek için bir metod kullanabiliriz.
 
 35
 00:01:47,440 --> 00:01:50,130
 so we can actually just
 use our SetDifficulty.
+bunun için SetDifficulty'i 
+kullanabiliriz
 
 36
 00:01:51,750 --> 00:01:55,470
 So, when our button is
 clicked, then it will go
+Artýk, düðmemiz týklandýðý zaman
+SetDifficulty metodu
 
 37
 00:01:55,470 --> 00:01:57,850
 into the SetDifficulty method,
+içine girecek ve
 
 38
 00:01:57,850 --> 00:02:01,620
 and then we should see
 which button was clicked.
+sonucunda hangi düðmenin
+týklandýðýný görmeliyiz.
 
 39
 00:02:01,620 --> 00:02:05,330
 So, if we test this out in
 Unity, I happen to already
+Eðer bunu Unity üzerinde test edersek
 
 40
 00:02:05,330 --> 00:02:08,730
 have my console window, as a tab here,
+ki burada bir sekme olarak konsol pencerem zaten var,
 
 41
 00:02:08,730 --> 00:02:10,490
 so we'll keep this open.
+bunu açýk tutacaðýz.
 
 42
 00:02:10,490 --> 00:02:11,573
 If I press play.
+Eðer oynatma tuþuna basarsam,
 
 43
 00:02:13,640 --> 00:02:17,180
 And I click the easy button,
 easy button was clicked,
+ve easy (kolay) düðmesine týklarsam
+"Easy Button was clicked" yazýsýný görmüþ olurum
 
 44
 00:02:17,180 --> 00:02:19,900
 hard button, hard button was clicked,
+Ayný þekilde hard düðmesi için de "Hard Button was clicked",
 
 45
 00:02:19,900 --> 00:02:22,710
 medium button, medium button was clicked.
+Ayný þekilde medium düðmesi için de "Medium Button was clicked"
 
 46
 00:02:22,710 --> 00:02:25,720
 Awesome, so, we know that our listeners
+Harika, artýk biliyoruz ki listenerlarýmýzýn (dinleyicilerimizin)
 
 47
 00:02:25,720 --> 00:02:27,530
 were set up properly.
+kurulumlarý doðru bir þekilde yapýldý.
 
 48
 00:02:27,530 --> 00:02:30,130
 So, what you're gonna do,
 is you're going to create
+Yapmanýz gereken þey 
+sizin kendi,
 
 49
 00:02:30,130 --> 00:02:34,460
 your own, private method, it'll
 be void called SetDifficulty
+SetDifficulty isminde
+olacak þekilde
 
 50
 00:02:35,500 --> 00:02:37,580
 just a test, and see that
 it works, you're going
+private metodunuzu oluþturmak,
+çünkü sadece Debug.Log metodunu
 
 51
 00:02:37,580 --> 00:02:41,810
 to use a Debug.Log method,
 so that way we can print out
+ kullanarak (ki bunun sayesinde hangi
+düðmenin týklandýðýný konsola yazdýrýp)
 
 52
 00:02:41,810 --> 00:02:44,420
 the name of the button that was clicked,
+çalýþýp çalýþmadýðýný test etmek için yapýyoruz.
 
 53
 00:02:44,420 --> 00:02:46,500
 and then in our start method,
 you're going to make sure
+ve Start metodu içinde, 
+onClick eventi için
 
 54
 00:02:46,500 --> 00:02:50,853
 you add a listener to your
 button, for the onClick event,
+bir listener (dinleyici) 
+eklediðinizden emin olunuz.
 
 55
 00:02:51,760 --> 00:02:53,983
 and when the button is clicked,
+Bunlarýn ardýndan düðme týklandýðý zaman,
 
 56
 00:02:55,330 --> 00:02:58,300
 it'll go into the SetDifficulty method,
+SetDifficulty metodunun içine girecek
 
 57
 00:02:58,300 --> 00:03:01,963
 and it should trigger this
 message in your console.
+ve konsolunuzda bu mesajý tetikleyecek.
 
 58
 00:03:02,820 --> 00:03:03,770
 Now it's your turn!
+Þimdi sizin sýranýz!
 
 59
 00:03:05,003 --> 00:03:07,420
 (soft music)
+(hafif müzik)
 
