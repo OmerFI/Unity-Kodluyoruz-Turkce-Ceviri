@@ -1,208 +1,268 @@
-ï»¿1
+1
 00:00:00,550 --> 00:00:03,422
 (computerized tones)
+(bilgisayarlaþtýrýlmýþ tonlar)
 
 2
 00:00:03,422 --> 00:00:05,720
 (electrical humming)
+(elektriksel uðultu)
 
 3
 00:00:05,720 --> 00:00:09,490
 - Now we just need to add
 a few more UI elements
+- Þimdi oyunumuz için
 
 4
 00:00:09,490 --> 00:00:10,400
 to our game.
+sadece birkaç UI öðesi eklememiz gerekiyor
 
 5
 00:00:10,400 --> 00:00:13,040
 So we've made it so we
 can restart our game.
+Daha önceden bunu yaptýk böylece
+oyunumuzu yeniden baþlatabiliriz.
 
 6
 00:00:13,040 --> 00:00:15,260
 But we want to be able
 to set the difficulty
+Ama biz oyuncularýmýz için
 
 7
 00:00:15,260 --> 00:00:16,910
 for our players.
+ayrýca oyun zorluðunu da ayarlayabilmesini istiyoruz
 
 8
 00:00:16,910 --> 00:00:20,180
 To do that, we'll actually just duplicate
+Bunu yapmak için, sadece bazý yazý ve düðmelerimizi
 
 9
 00:00:20,180 --> 00:00:22,320
 some of our text and our buttons.
+çoðaltacaðýz.
 
 10
 00:00:22,320 --> 00:00:23,830
 So our Game Over Text,
+Yani, baþlýkla ayný yerde bulunduðundan
 
 11
 00:00:23,830 --> 00:00:26,150
 since our title will be in the same place.
+Game Over Text'i için bu iþlemi yapacaðýz.
 
 12
 00:00:26,150 --> 00:00:28,840
 If we select our Game Over Text
+Eðer Game Over Text'ini seçip
 
 13
 00:00:28,840 --> 00:00:31,253
 and duplicate with Control + D,
+Control + D ile çoðaltýrsak,
 
 14
 00:00:32,100 --> 00:00:33,800
 we have Game Over Text again.
+Tekrardan Game Over Text'ini elde etmiþ oluruz
 
 15
 00:00:33,800 --> 00:00:36,130
 We'll set this to active.
+Bunu aktif olarak ayarlayacaðýz.
 
 16
 00:00:36,130 --> 00:00:40,263
 And I'm going to rename the
 text to be our title text.
+Ve ben bu yazýyý Title Text olacak þekilde
+yeniden adlandýracaðým.
 
 17
 00:00:41,360 --> 00:00:44,590
 And then we don't want
 our text to be the same
+Bu yazýnýn Game Over ile ayný olmasý
+durumunda kafamýzý karýþtýracaðýndan
 
 18
 00:00:44,590 --> 00:00:47,870
 as our Game Over 'cause that
 would be really confusing.
+Ayný iþlemi buna da yapacaðýz.
 
 19
 00:00:47,870 --> 00:00:50,730
 So what we'll do is we'll change our text
+Yani yapmamýz gereken þey bu yazýyý deðiþtirip
 
 20
 00:00:50,730 --> 00:00:53,020
 and we'll come up with a clever title.
+daha mantýklý bir baþlýk yazýsý eklemek.
 
 21
 00:00:53,020 --> 00:00:58,020
 So I'm gonna call this Clicky Crates.
+Ben bunu Clicky Crates olarak adlandýracaðým.
 
 22
 00:00:58,570 --> 00:01:02,100
 Now I don't want it to be red
 so I'm going to change that
+Ben kýrmýzý olmasýný istemiyorum
 
 23
 00:01:02,100 --> 00:01:04,560
 and we'll make it the
 exact opposite color.
+bu yüzden rengini
+tam zýt rengi yapacaðým
 
 24
 00:01:04,560 --> 00:01:05,803
 So that'll be,
+Yani
 
 25
 00:01:08,050 --> 00:01:10,650
 let's see maybe a
 greenish, maybe a blueish.
+belki yeþilimsi veya mavimsi
+olabilir
 
 26
 00:01:10,650 --> 00:01:12,970
 Ooh I like that blue, that one looks good.
+Maviyi sevdim, gayet iyi duruyor
 
 27
 00:01:12,970 --> 00:01:13,803
 Maybe a little darker.
+Belki birazcýk daha koyu olabilir.
 
 28
 00:01:13,803 --> 00:01:14,636
 There you go.
+Þimdi oldu
 
 29
 00:01:14,636 --> 00:01:15,742
 Cool.
+Güzel.
 
 30
 00:01:15,742 --> 00:01:16,750
 So now we have our Clicky Crates.
+Þimdi Clicky Crates yazýmýzý
+elde etmiþ olduk
 
 31
 00:01:16,750 --> 00:01:19,820
 Now what we also need to do
 is make some more buttons.
+Þimdi ise yapmamýz gereken
+biraz daha düðme yapmak.
 
 32
 00:01:19,820 --> 00:01:21,270
 So I'll actually take our Restart button
+Ben Restart button'ý seçip
 
 33
 00:01:21,270 --> 00:01:23,230
 and we'll duplicate this.
+çoðaltacaðým.
 
 34
 00:01:23,230 --> 00:01:25,973
 And we'll set this back to
 active so we can see it.
+Ardýndan tekrardan görebilmek
+için bunu aktif olarak ayarlayacaðýz
 
 35
 00:01:26,940 --> 00:01:30,035
 Now our Restart button, this
 one will be our Easy button
+Þimdi bu bizim Easy Button'ýmýz
+(Kolay düðmesi) olacak
 
 36
 00:01:30,035 --> 00:01:33,270
 because we definitely
 wanna start easy first.
+Çünkü öncelikle easy (kolay)
+ile baþlamak istiyoruz.
 
 37
 00:01:33,270 --> 00:01:35,830
 And then we go into our
 Easy button by expanding.
+Ve ardýndan yanýndaki tike týklayarak
+Easy button'ýn içine giriyoruz
 
 38
 00:01:35,830 --> 00:01:37,840
 We'll change our text
 because we wanna make sure
+Yazýmýzý deðiþtireceðiz çünkü easy (kolay)
 
 39
 00:01:37,840 --> 00:01:40,120
 that we know it's easy mode.
+modda olduðumuzdan emin olmak için.
 
 40
 00:01:40,120 --> 00:01:41,100
 Easy.
+Easy (Kolay).
 
 41
 00:01:41,100 --> 00:01:43,540
 Now our button is definitely
 a little bit too large
+Düðmemiz þuanda birazcýk
+fazla büyük
 
 42
 00:01:43,540 --> 00:01:45,280
 so we'll actually change the width
+bu yüzden onu daha küçük yapmak için
 
 43
 00:01:46,420 --> 00:01:48,323
 to make it a bit smaller.
+width'ini (geniþliðini) deðiþtireceðiz.
 
 44
 00:01:54,830 --> 00:01:57,233
 So I'll make it something
 like, yeah, something like now.
+Bu deðer ideal gibi.
 
 45
 00:01:57,233 --> 00:01:58,940
 I like this as a nice round
 number so it's easier.
+Bunu sevdim, daha kolay olmasý
+için deðeri yuvarlayacaðým
 
 46
 00:01:58,940 --> 00:02:00,440
 So 115,
+115 gayet iyi,
 
 47
 00:02:00,440 --> 00:02:01,273
 cool.
+harika.
 
 48
 00:02:02,260 --> 00:02:03,770
@@ -211,240 +271,311 @@ And then we'll reposition this
 49
 00:02:03,770 --> 00:02:07,480
 so let's see if I move it not on the Y.
+bakalým, eðer y üzerinde hareket ettirirsek
 
 50
 00:02:07,480 --> 00:02:09,960
 In fact I want it to move on the X.
+aslýnda y deðil x üzerinde 
+hareket ettirmek istiyorum
 
 51
 00:02:09,960 --> 00:02:10,793
 So
+Böylece
 
 52
 00:02:14,160 --> 00:02:16,470
 if we move Easy over
+Easy (kolay) düðmesini
 
 53
 00:02:17,560 --> 00:02:19,743
 to about there, cool.
+buraya taþýyalým, güzel oldu
 
 54
 00:02:21,300 --> 00:02:22,580
 And then
+Ve
 
 55
 00:02:23,550 --> 00:02:25,240
 let's see so we wanna do the same thing.
+ayný þeyi yine yapmak istiyoruz
 
 56
 00:02:25,240 --> 00:02:27,330
 We'll make a Medium difficulty button
+Medium (orta) seviye düðmesi yapacaðýz
 
 57
 00:02:27,330 --> 00:02:28,623
 so we'll duplicate that.
+bu yüzden bunu çoðaltacaðýz.
 
 58
 00:02:29,480 --> 00:02:32,150
 That time I just right click duplicated.
+Biraz önce sadece sað týklayýp 
+duplicate'i seçtim ve çoðalttým.
 
 59
 00:02:32,150 --> 00:02:33,693
 Call this Medium button.
+Medium Button þeklinde isimlendirin
 
 60
 00:02:35,000 --> 00:02:39,223
 We wanna re-change the text
 back to medium this time.
+Bu sefer düðmenin text'ini (yazýsýný)
+Medium olarak deðiþtiriyoruz.
 
 61
 00:02:40,250 --> 00:02:42,590
 Now the problem here is our
 button is actually on top of
+Þuan buradaki problemimiz
+düðmemizin
 
 62
 00:02:42,590 --> 00:02:43,500
 our Easy button.
+Easy (kolay) düðmesinin üstünde olmasý.
 
 63
 00:02:43,500 --> 00:02:45,870
 So we can't actually see that so
+Bu yüzden onu göremeyiz
 
 64
 00:02:45,870 --> 00:02:47,220
 let's see.
+birazcýk konumunu deðiþtirelim.
 
 65
 00:02:47,220 --> 00:02:48,053
 Let's put this--
+Eðer X konumuna 0 koyarsak
 
 66
 00:02:48,053 --> 00:02:49,570
 what happens if we put it to zero?
+ne olur acaba?
 
 67
 00:02:49,570 --> 00:02:51,540
 Okay, button's a little tight.
+Düðme þuan birazcýk sýkýþýk kaldý.
 
 68
 00:02:51,540 --> 00:02:53,830
 Let's see if we change the width maybe to
+Bakalým eðer width'i (geniþliði) 100
 
 69
 00:02:55,740 --> 00:02:56,650
 100.
+yaparsak nolur.
 
 70
 00:02:56,650 --> 00:02:58,330
 Okay, that fits pretty well.
+Tamam, bu oldukça iyi oldu.
 
 71
 00:02:58,330 --> 00:03:00,810
 Change our Easy button back to 100.
+Easy (kolay) düðmemizi 100 olarak deðiþtirin.
 
 72
 00:03:00,810 --> 00:03:02,713
 Have some nice symmetry.
+Birazcýk simetrik olsun.
 
 73
 00:03:04,380 --> 00:03:05,870
 And then our Medium button,
+Ve ayný þeyi Medium düðmesi
 
 74
 00:03:05,870 --> 00:03:06,790
 we'll do the same thing.
+için de yapacaðýz.
 
 75
 00:03:06,790 --> 00:03:08,700
 We'll Control + D,
+Control + D (Command + D)
 
 76
 00:03:08,700 --> 00:03:11,250
 Command + D to duplicate.
+tuþlarýna basalým.
 
 77
 00:03:11,250 --> 00:03:14,240
 So this'll be our Hard
 button for hard mode.
+Bu bizim Hard (zor) modumuz
+için Hard Button'ýmýz olacak.
 
 78
 00:03:14,240 --> 00:03:17,880
 And then, let's see, our
 Easy button was about
+Ve napýyorduk...
+Easy Button'ýmýz yaklaþýk olarak
 
 79
 00:03:18,830 --> 00:03:20,883
 negative 115.
+negatif 115 idi.
 
 80
 00:03:23,570 --> 00:03:26,490
 So to get some good symmetry
 going, we'll make this
+Birazcýk daha güzel simetri elde
+etmek için bunun pozisyonunu
 
 81
 00:03:27,750 --> 00:03:29,740
 position 115, cool.
+115 olarak ayarlayacaðýz, þimdi güzel oldu
 
 82
 00:03:29,740 --> 00:03:31,400
 Now it's all even.
+Þimdi tam simetrik oldular.
 
 83
 00:03:31,400 --> 00:03:32,300
 And then last but not least,
+Ve son olarak
 
 84
 00:03:32,300 --> 00:03:35,603
 we change the text on our
 Hard button to be hard.
+Hard Button'ýmýz üzerindeki texti (yazýyý)
+ Hard olarak deðiþtiriyoruz.
 
 85
 00:03:36,820 --> 00:03:38,410
 And now we have a hard mode.
+Þuandan itibaren hard (zor) modumuz olmuþ oldu.
 
 86
 00:03:38,410 --> 00:03:41,040
 So that makes it a lot easier
 for the players to see,
+Böylece bu yaptýklarýmýz oyuncularýn
+hangi düðmeye basmasý
 
 87
 00:03:41,040 --> 00:03:41,873
 what buttons to press.
+gerektiðini anlamalarýný kolaylaþtýracak.
 
 88
 00:03:41,873 --> 00:03:43,130
 They don't really do anything right now.
+Þuanlýk bir iþ yapmýyorlar.
 
 89
 00:03:43,130 --> 00:03:44,860
 But it certainly looks really good.
+Ama gayet güzel gözüküyorlar.
 
 90
 00:03:44,860 --> 00:03:46,050
 So what you're gonna do
+Yapmanýz gereken þey
 
 91
 00:03:46,050 --> 00:03:48,930
 is you're going to create
 your own title text
+kendi title text (baþlýk yazýnýzý)
+ve üç zorluk seviyesi
 
 92
 00:03:48,930 --> 00:03:50,930
 and your three difficulty buttons.
+düðmesini oluþturmak.
 
 93
 00:03:50,930 --> 00:03:53,310
 So what you can do is
 just go right click over
+Bunun için yapabileceðiniz þey
+Game Over yazýsý üzerine
 
 94
 00:03:53,310 --> 00:03:57,200
 Game Over Text, duplicate,
 and then make sure you rename
+sað týklayýp, duplicate edip (çoðaltýp)
+aralarýndaki farký belirticek
 
 95
 00:03:57,200 --> 00:03:58,740
 that to the title so that way you know
+þekilde baþlýk yazýlarýný
 
 96
 00:03:58,740 --> 00:04:00,620
 the difference between the two.
+deðiþtirmek olabilir.
 
 97
 00:04:00,620 --> 00:04:02,950
 You can do the same thing
 with the Restart button
+Her düðmeyi farklý yapmak için ayný þeyi 
+Restart Button (Yeniden baþlatma)
 
 98
 00:04:02,950 --> 00:04:05,160
 to make each of your different buttons.
+düðmesi için de yapabilirsiniz.
 
 99
 00:04:05,160 --> 00:04:06,630
 Make sure to set them all to active
+Hepsini aktif olarak ayarladýðýnýzdan emin olunuz
 
 100
 00:04:06,630 --> 00:04:08,190
 so you can see them back on your scene.
+çünkü böylelikle hepsini scene (sahne) üzerinde görebilirsiniz.
 
 101
 00:04:08,190 --> 00:04:10,760
 Rename them, reposition
 them and make it look
+Hepsini yeniden adlandýrýn, yeniden
+konumlandýrýn ve güzel
 
 102
 00:04:10,760 --> 00:04:12,180
 really nice.
+gözükmesini saðlayýn.
 
 103
 00:04:12,180 --> 00:04:13,130
 Now it's your turn.
+Þimdi sizin sýranýz.
 
 104
 00:04:14,305 --> 00:04:15,951
 (computerized tones)
+(bilgisayarlaþtýrýlmýþ tonlar)
 
 105
 00:04:15,951 --> 00:04:18,756
 (electrical humming)
+(elektriksel uðultu)
 
