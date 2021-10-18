@@ -1,358 +1,457 @@
-ï»¿1
+1
 00:00:05,840 --> 00:00:09,770
 - [Instructor] Our title
 screen is now looking amazing,
+-[Eğitmen] Başlangıç ekranımız
+şimdi harika görünüyor,
 
 2
 00:00:09,770 --> 00:00:11,430
 but we do have this problem
+ama aslında oyun başladığımızda
 
 3
 00:00:11,430 --> 00:00:13,230
 where we're not actually
 starting the game.
+bir sorunumuz var.
 
 4
 00:00:13,230 --> 00:00:15,490
 The game has already started.
+Oyun çoktan başladı.
 
 5
 00:00:15,490 --> 00:00:17,360
 And we can actually
 click all of these boxes,
+Ve aslında kutulara tıklayabilliriz.
 
 6
 00:00:17,360 --> 00:00:19,960
 but, in fact, we can
 also click these buttons,
+ama,aslında,yardımcı
+olan bu düğmelere
 
 7
 00:00:19,960 --> 00:00:21,520
 which is helpful.
+de tıklayabiliriz.
 
 8
 00:00:21,520 --> 00:00:23,130
 And down in the bottom you can see
+Ve altta görebilirsin
 
 9
 00:00:23,130 --> 00:00:25,060
 we know which button was clicked.
+hangi butona tıklandığını biliyoruz.
 
 10
 00:00:25,060 --> 00:00:26,860
 In fact, if I squeeze between this button
+Aslında bu düğme arasına baskı yaparsam
 
 11
 00:00:26,860 --> 00:00:28,750
 I can restart the game, so that's fun.
+oyunu baştan başlatabilirim,eğlenceli.
 
 12
 00:00:28,750 --> 00:00:32,683
 So I actually need to fix that
 and actually start our game.
+Bu yüzden aslında bunu düzeltmem ve
+aslında oyunumuzu başlatmam gerekiyor.
 
 13
 00:00:34,330 --> 00:00:36,350
 Now, in our game manager's script,
+Şimdi game manager scriptimizde,
 
 14
 00:00:36,350 --> 00:00:37,600
 since this is the script
+oyunumuzun geçtiği
 
 15
 00:00:37,600 --> 00:00:39,460
 that's managing all the different states
+tüm farklı durumları yöneten
 
 16
 00:00:39,460 --> 00:00:41,070
 that our game is going through.
+script olduğundan.
 
 17
 00:00:41,070 --> 00:00:43,760
 Like restarting and game over,
+Restart(Yeniden başlatma) ve game over(oyun bitti)
 
 18
 00:00:43,760 --> 00:00:47,590
 we'll add a start game method into this,
+gibi buna bir start game(oyun başlatma) metodu ekleyeceğiz,
 
 19
 00:00:47,590 --> 00:00:49,720
 so we don't have to keep immediately
+böylece oyuna hemen başlamamıza
 
 20
 00:00:49,720 --> 00:00:51,113
 starting the game on start.
+gerek kalmayacak.
 
 21
 00:00:53,670 --> 00:00:55,320
 So, we'll add a new method,
+Yani yeni bir metod ekleyeceğiz,
 
 22
 00:00:55,320 --> 00:00:56,153
 we'll make it public,
+public hale getireceğiz,
 
 23
 00:00:56,153 --> 00:00:58,750
 so we can use it outside of this class.
+böylece onu bu class'ın dışında kullanabiliriz.
 
 24
 00:00:58,750 --> 00:01:01,253
 It'll be void, and it'll
 be called start game.
+void olacak ve StartGame denebilir.
 
 25
 00:01:02,670 --> 00:01:05,220
 Luckily, we've already written
 code to start our game.
+Neyse ki, oyunumuzu başlatma
+için zaten kod yazdık.
 
 26
 00:01:05,220 --> 00:01:07,313
 So, we're just gonna use that.
+Yani sadece bunu kullanacağız.
 
 27
 00:01:08,300 --> 00:01:10,110
 In our start method here,
+Buradaki start metodumuzda,
 
 28
 00:01:10,110 --> 00:01:13,440
 you can see that we have
 our different settings.
+Farklı ayarlara sahip
+olduğumuzu görebilirsin.
 
 29
 00:01:13,440 --> 00:01:15,890
 So we'll take all of these
+yani hepsini start metodundan
 
 30
 00:01:15,890 --> 00:01:19,333
 and we'll cut them out
 of our start method,
+alacağız ve keseceğiz,
 
 31
 00:01:20,250 --> 00:01:23,980
 and we'll paste all of that
 code into our start game.
+ve bu kodu StartGame'e yapıştıracağız.
 
 32
 00:01:23,980 --> 00:01:26,330
 So now when the game is started,
+Yani şimdi oyun başladığında,oyunun active
 
 33
 00:01:26,330 --> 00:01:28,440
 we know that the game is set to active.
+(aktif) olarak ayarlandığını biliyoruz.
 
 34
 00:01:28,440 --> 00:01:29,450
 Our score is reset,
+Puanımız sıfırlandıktan ve
 
 35
 00:01:29,450 --> 00:01:31,690
 and then we can start
 spawning all of our enemies.
+düşmanlarımız spawnlandıktan(yeniden doğma)
+sonra başlayabiliriz.
 
 36
 00:01:31,690 --> 00:01:33,430
 Make sure we save,
+Kaydettiğimizde emin olun,
 
 37
 00:01:33,430 --> 00:01:36,270
 and then, in our difficulty button script,
+ve ardından, DifficultyButton scriptinde
 
 38
 00:01:36,270 --> 00:01:38,000
 we're actually going to need a reference
+tıpkı hedef scriptimizde yaptığımız gibi,
 
 39
 00:01:38,000 --> 00:01:39,090
 to the game manager,
+game managere bir
 
 40
 00:01:39,090 --> 00:01:41,130
 just like we did in our target script.
+referansa ihtiyacımzı olacak.
 
 41
 00:01:41,130 --> 00:01:42,960
 So this will be private,
+Yani bu private olacak,
 
 42
 00:01:42,960 --> 00:01:45,440
 and we just need to get our game manager,
+ve sadece game managerimizi
 
 43
 00:01:45,440 --> 00:01:46,590
 and we'll call it the game manager,
+almamız gerekiyor,
 
 44
 00:01:46,590 --> 00:01:49,270
 because that's what it is.
+çünkü olan bu.
 
 45
 00:01:49,270 --> 00:01:50,420
 Now, in our start method,
+Şimdi start metodumuzda,
 
 46
 00:01:50,420 --> 00:01:54,450
 we also need to get a
 reference to that game manager.
+bu game managere ayrıca
+referans almamız lazım.
 
 47
 00:01:54,450 --> 00:01:57,360
 So we'll get our game manager variable,
+Böylece game manager değişkenimizi alacağız,
 
 48
 00:01:57,360 --> 00:01:59,740
 and we'll set it or assign it
+ve onu ayarlayacağız
 
 49
 00:01:59,740 --> 00:02:03,220
 to the game manager game object.
+veya game manager oyun nesnesini atayacağız.
 
 50
 00:02:03,220 --> 00:02:08,220
 So, if we use game
 object in our hierarchy,
+Yani hierarchymizdeki game
+objecti kullanırsak,
 
 51
 00:02:08,500 --> 00:02:13,500
 we will find the object
 that's called game manager.
+Game manageri bulacağız.
 
 52
 00:02:15,520 --> 00:02:18,180
 And then once we've found that object,
+Ve sonra o nesneyi bulduğumuzda,
 
 53
 00:02:18,180 --> 00:02:19,923
 we'll need to get its component,
+componentini almamız gerekecek,
 
 54
 00:02:21,020 --> 00:02:23,853
 which is handily also
 called the game manager.
+Buraya game manager denir.
 
 55
 00:02:27,090 --> 00:02:29,220
 And then in our set difficulty method,
+Ve sonra bizim SetDifficulty metodumuzda,
 
 56
 00:02:29,220 --> 00:02:31,173
 we can now use our game manager.
+artık game managerimizi kullanabiliriz.
 
 57
 00:02:32,900 --> 00:02:37,163
 And we can use the start game
 method, that we wrote before.
+Ve daha önce yazdığımız
+StartGame metodunu kullanabiliriz.
 
 58
 00:02:38,090 --> 00:02:40,770
 So, if we test our game now,
+Şimdi oyunumuzu denersek,
 
 59
 00:02:40,770 --> 00:02:43,223
 nothing should happen when we press play.
+playe bastığımızda hiçbirşey olmamalı.
 
 60
 00:02:44,700 --> 00:02:47,210
 None of those crates are spawning,
+Bu kasaların hiçbiri spawnlamıyor
+
 
 61
 00:02:47,210 --> 00:02:49,510
 but then, if we press one of our buttons,
+ama sonra düğmelerimizden birine basarsak,
 
 62
 00:02:49,510 --> 00:02:50,833
 let's go for easy mode,
+hadi kolay moda geçelim,
 
 63
 00:02:52,400 --> 00:02:54,530
 there you go you've got
 some crate spawning.
+işte böyle bazı sandıklar spawnlanıyor.
 
 64
 00:02:54,530 --> 00:02:56,800
 And then our game should go over,
+Ve sonra oyunumuz bitmeli,
 
 65
 00:02:56,800 --> 00:02:58,563
 get the game over, cool.
+oyunu bitir, güzel.
 
 66
 00:03:00,720 --> 00:03:02,550
 So we're almost there,
+Neredeyse bitti,
 
 67
 00:03:02,550 --> 00:03:04,110
 but at least now we can start the game
+ama en azından şimdi düğmelerden
 
 68
 00:03:04,110 --> 00:03:06,070
 when we press one of the buttons.
+birine bastığımızda oyuna başlayabiliriz.
 
 69
 00:03:06,070 --> 00:03:07,930
 So, what you're gonna do
+Peki ne yapacaksın
 
 70
 00:03:07,930 --> 00:03:10,500
 in your game manager script,
+game manager scriptinizde,
 
 71
 00:03:10,500 --> 00:03:13,200
 you're going to create a new
 method called start game.
+start game adlı yeni bir
+metod oluşturacaksınız.
 
 72
 00:03:14,070 --> 00:03:17,230
 And then we can just grab all of the code
+Ardından en üstteki start metodumuzda
 
 73
 00:03:17,230 --> 00:03:19,193
 from our start method at the top,
+tüm kodu alabiliriz.
 
 74
 00:03:20,043 --> 00:03:23,740
 and paste it down into start game.
+ve bunu start game e yapıştırın.
 
 75
 00:03:23,740 --> 00:03:26,023
 In our difficulty button script,
+Difficulty button scriptimizde,
 
 76
 00:03:26,890 --> 00:03:29,580
 create a variable for the game manager.
+bir game manager değişkeni oluşturun.
 
 77
 00:03:29,580 --> 00:03:33,090
 Make sure to find that
 game manager in the scene,
+Scene de oyun yöneticisini
+bulduğunuzdan emin olun,
 
 78
 00:03:33,090 --> 00:03:36,130
 and then get the component
 of its game manager script,
+ve ardından game manager scriptinin
+componentini alın,
 
 79
 00:03:36,130 --> 00:03:37,533
 so we can get the variables.
+böylece değişkenleri alabiliriz.
 
 80
 00:03:38,430 --> 00:03:41,050
 And then, in set difficulty,
+ve sonra set difficultyde,
 
 81
 00:03:41,050 --> 00:03:44,000
 you can then call game
 manager, dot start game,
+game manageri arayabilir,
+oyunu başlatabilirsiniz,
 
 82
 00:03:44,000 --> 00:03:46,370
 so, when we click one of the buttons,
+düğmelerden birine tıkladığımızda,
 
 83
 00:03:46,370 --> 00:03:49,910
 it'll then run this line
 of code and start our game.
+bu kod satırını çalıştıracak ve
+oyunumuzu başlatacaktır.
 
 84
 00:03:49,910 --> 00:03:50,860
 Now it's your turn.
+Şimdi senin sıran.
 
